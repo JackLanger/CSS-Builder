@@ -2,7 +2,7 @@
 
 Web playground for box-shadows and absolute position
 
-<stron>features:</strong>
+<strong>features:</strong>
 <ul>
 <li>resize of box using drag and drop</li>
 <li>
