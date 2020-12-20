@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/style.css" />
+  </head>
+  <body>
+    <div class="content">
+
+      <div class="slider_container">
+        <div class="container">
+          <label for="offsetX">offset x</label>
+          <input type="range"name="offsetX" class="spread_range" min="-50" max="50"  value="0"/>
+          <input  type="text" name="spreadIn" class="spread_in" id="offsetX"/>
+        </div>
+        <div class="container">
+          <label for="offsetX">offset x</label>
+          <input type="range" name="offsetY" class="spread_range" min="-50" max="50" value="0"/>
+          <input  type="text" name="spreadIn" class="spread_in" id="offsetY"/>
+        </div>
+        <div class="container">
+          <label for="blur">blur</label>
+          <input type="range" name="blur" class="spread_range" max="100" value="0"/>
+          <input  type="text" name="spreadIn" class="spread_in" id="blur"/>
+        </div>
+        <div class="container">
+          <label for="spread">spread</label>
+          <input type="range" class="spread_range" name="spread" max="100" value="0"/>
+          <input  type="text" name="spreadIn" class="spread_in" id="spread"/>
+        </div>
+        <div class="container">
+          <label for="spread">red</label>
+          <input type="range" class="spread_range" name="red" max="255" value="0"/>
+          <input  type="text" name="spreadIn" class="spread_in" id="red"/>
+        </div>
+        <div class="container">
+          <label for="spread">green</label>
+          <input type="range" class="spread_range" name="green" max="255" value="0"/>
+          <input  type="text" name="spreadIn" class="spread_in" id="green"/>
+        </div>
+        <div class="container">
+          <label for="spread">blue</label>
+          <input type="range" class="spread_range" name="blue" max="255" value="0"/>
+          <input  type="text" name="spreadIn" class="spread_in" id="blue"/>
+        </div>
+        <div class="container">
+          <label for="spread">opacity</label>
+          <input type="range" class="spread_range" name="opacity" max="100"  value="0"/>
+          <input  type="text" name="spreadIn" class="spread_in" id="opacity" />
+        </div>
+      </div>
+      
+      <div>
+          <p class="info">
+            box-shadow:  0px 0px 0px 0px rgba(0,0,0,0.0);
+            <p id="boxinfo"></p>
+            <p id="box_position">position:; left:; top:;</p>
+          </p>
+              </div>
+          
+    </div>
+
+
+      <div class="box">
+        <div class="dragarea"></div>
+        <div class="resizer"></div></div>
+
+      <script type="text/javascript" src="/script/position.js"></script>
+      <script type="text/javascript" src="/script/values.js"></script>
+      <script type="text/javascript" src="/script/resize.js"></script>
+  </body>
+</html>

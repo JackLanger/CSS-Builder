@@ -1,0 +1,70 @@
+:root{
+    --contentSize:16px;
+}
+body{
+    display: grid;
+}
+.slider_container{
+    display: table;
+    width: 600px;
+    height: 200px;
+}
+.slider_container >*{
+    margin: 5px;
+}
+.slider_container label{
+    grid-column: 1;
+    width: 100px;
+}
+.slider_container .spread_in{
+grid-column: 3;
+width: 50px;
+border: #aaa solid 1px;
+}
+.slider_container .spread_range{
+    grid-column: 2;
+    width: auto;
+    float:right;
+    width: 200px;
+}
+.box{
+    background:#aaa;
+    width: 30%;
+    height: 150px;
+    position: absolute;
+    box-shadow: 0 0 0 0 #000;
+    top: 500px;
+}
+.container{
+    display: grid;
+}
+.resizer{
+    background: #888;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom:-5px;
+    right: -5px;
+    cursor:nwse-resize;
+}
+
+.content{
+    position: relative;
+    width: 700px;
+    max-width: 70%;
+    border: solid #999;
+    box-sizing: border-box;
+    margin: 25px;
+}
+.dragarea{
+    width: 96%;
+    height: 90%;
+    left:2%;
+    top: 5%;
+    position:relative;
+    cursor: grab;
+}
+.dragarea:hover{
+    border: 1px #fff dotted;
+}
